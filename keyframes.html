@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS KEYFRAMES</title>
+    <style>
+        @keyframes rotateBtn {
+
+            0% {
+                margin-top: -20vh;
+                transform: rotate3d(50deg);
+            }
+
+
+            30% {
+                margin-top: -20vh;
+                transform: rotate3d(120deg);
+            }
+
+            60% {
+                margin-top: -10vh;
+                transform: rotate3d(180deg);
+            }
+
+            100% {
+                margin-top: 0vh;
+                transform: rotate3d(360deg);
+            }
+        }
+
+
+        div {
+            border: 1px solid gray;
+            max-width: auto;
+            max-height: auto;
+            width: 600px;
+            height: auto;
+            position: center;
+            transform: translate(50vw, 30vh);
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.35) 5px 15px 40px;
+
+            button {
+                animation: rotateBtn 1s normal 500ms normal;
+                position: absolute;
+            }
+
+                {
+                margin: 10px;
+                 }
+
+
+            .btn-grad {
+                background-image: linear-gradient(to right, #1A2980 0%, #26D0CE 51%, #1A2980 100%);
+            }
+
+            .btn-grad {
+                margin: 10px;
+                padding: 15px 45px;
+                text-align: center;
+                text-transform: uppercase;
+                transition: 0.5s;
+                background-size: 200% auto;
+                color: white;
+                box-shadow: 0 0 20px #eee;
+                border-radius: 10px;
+                display: block;
+                outline: none;
+                border: none;
+            }
+
+            .btn-grad:hover {
+                background-position: right center;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form>
+
+            <h1>LOGIN PAGE</h1>
+            <legend>KEY FRAMES </legend>
+            <label>Email id</label><br />
+            <input type="email" placeholder="Enter your email" required /></br>
+            <label>password</label><br />
+            <input type="password" placeholder="Enter your password" required /></br>
+            <button type="submit" class="btn-grad">LOGIN</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

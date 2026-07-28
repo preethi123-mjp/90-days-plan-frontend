@@ -1,0 +1,31 @@
+/* 1. Universal Selector: Resets default browser margins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Element Selector: Styles the main webpage body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #387d9f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* 3. Class Selector: Styles the profile card container */
+.profile-card {
+  background-color: #ffffff;
+  border: 3px solid #dddddd;
+  padding: 24px;
+  width: 500px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+/* 4. Multiple Selectors: Applies uniform text alignment */
+h2, p {
+  text-align: center;
+}

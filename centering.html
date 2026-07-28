@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>centering</title>
+    <style>
+        form {
+            border: 1px solid gray;
+            max-width: auto;
+            max-height: auto;
+            width: 600px;
+            height: auto;
+            position: center;
+            transform: translate(50vw, 30vh);
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.35) 5px 15px 40px;
+        }
+
+        button {
+            animation: rotateBtn 1s normal 500ms normal;
+            position: absolute;
+        }
+
+        .btn-grad {
+            background-image: linear-gradient(to right, #1A2980 0%, #26D0CE 51%, #1A2980 100%);
+        }
+
+        .btn-grad {
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+            outline: none;
+            border: none;
+        }
+
+        .btn-grad:hover {
+            background-position: right center;
+            color: #fff;
+            text-decoration: none;
+        }
+
+            {
+            margin: 10px;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            height: 0-vh;
+            background-color: rgb(45, 28, 89);
+            border: 1px solid grey;
+        }
+
+        .item {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <form clas="item">
+
+            <h1>LOGIN PAGE</h1>
+            <legend>KEY FRAMES </legend>
+            <label>Email id</label><br />
+            <input type="email" placeholder="Enter your email" required /></br>
+            <label>password</label><br />
+            <input type="password" placeholder="Enter your password" required /></br>
+            <button type="submit" class="btn-grad">LOGIN</button>
+        </form>
+    </div>
+</body>
+
+</html>

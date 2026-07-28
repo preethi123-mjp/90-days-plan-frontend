@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Senak Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+        .header-name {
+            font-size: 1.5rem;
+            font-weight: bolder;
+        }
+
+        .header-name-2 {
+            color: rgba(24, 179, 24, 0.821);
+        }
+
+        #navbarText>ul>li {
+            margin-right: 2rem;
+        }
+
+        .btn-header-community {
+            background-color: rgb(56, 204, 56);
+            border-radius: 20px;
+            color: black;
+            padding: 0.5rem;
+            font-weight: bolder;
+            border: none;
+        }
+
+        .btn-header-community :hover {
+            animation: scal 100ms normal;
+
+        }
+
+        @keyframes scal {
+            0% {
+                transform: scale(1.01);
+            }
+
+            10% {
+                transform: scale(1.02);
+            }
+
+            20% {
+                transform: scale(1.02);
+            }
+
+            30% {
+                transform: scale(1.03);
+            }
+
+            40% {
+                transform: scale(1.04);
+            }
+
+            50% {
+                transform: scale(1.04);
+            }
+
+            60% {
+                transform: scale(1.05);
+            }
+
+            70% {
+                transform: scale(1.06);
+            }
+
+            80% {
+                transform: scale(1.07);
+            }
+
+            90% {
+                transform: scale(1.08);
+            }
+
+            100% {
+                transform: scale(1.11);
+            }
+        }
+
+        .home-hero-text-banner {
+            border-radius: 20px;
+            background-color: rgba(25, 10, 25, 0.962);
+            color: rgba(10, 216, 10, 0.86);
+            border: 1px solid rgb(51, 167, 51);
+
+        }
+
+        .banner-hero-text1 {
+            color: white;
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        .banner-hero-text2 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: rgb(48, 177, 48);
+        }
+
+        .para-hero {
+            color: rgb(63, 59, 59);
+            font-size: 1.2rem;
+            margin-top: 2rem;
+        }
+
+        .live-class-header {
+            text-transform: capitalize;
+            color: rgba(35, 128, 35, 0.711)
+        }
+
+        .live-container {
+            background-color: rgba(36, 36, 109, 0.441);
+            border: 1px solid rgb(63, 56, 56);
+            padding: 0.5rem;
+
+        }
+
+        .live-sub-container {
+            border: 1ps solid gray;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 20px;
+            background-color: 1px solid green;
+            color: rgba(46, 153, 46, 0.473);
+            border: 1px solid rgb(29, 151, 29);  
+
+        }
+        .logo-container{
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            padding:4rem;
+            animation: animateLogo 1s backwards 500ms infinite;
+        }
+        @keyframes animateLogo{
+            0%{margin-top: 0rem;box-shadow:box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
+             50%{margin-top: 0rem;}
+              100%{margin-top: 0rem;box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar  navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="senak360-logo.png" width="30px" height="30px" />
+                </a>
+                <div class="row" style="color: white;margin-left:2rem;">
+                    <div class="header-name row">
+                        <div class="col"> <span class="header-name-1 col"> SENAK </span>
+                            <span class="header-name-2 col">360</span>
+                        </div>
+                    </div>
+                    <div class="row">TELUGU . TECH . BHARAT</div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link header-name-2" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mentorship</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Apps</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Bharat&Culture</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <span class="btn-header-community">
+                        <button class="btn-header-community">Join Community</button>
+                    </span>
+
+                </div>
+            </div>
+        </nav>
+        <main class="home-hero-text-banner">
+            <div class="row py-4">
+                <div class="col-8 px-4">
+                    <div class="row">
+                        <div class="col-6 px-4">
+                            <p class="home-hero-text-banner">Live • Telugu • Mon–Fri + Weekend Webinars</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-11 px-4">
+                            <span class="banner-hero-text1">Industry-ready engineers,</span>
+                            <span class="banner-hero-text2">crafted in Telugu.</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-10 px-4 para-hero">
+                            Senak 360 is live, no-fluff mentorship for undergraduates, freshers, career-gap aspirants
+                            and NON-IT to IT switchers — taught the way real teams build software, not the textbook way.
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-10"></div>
+                <div class="col-5">
+                    <div class="row py-4 px-4 ml-2">
+                        <div class="live-container">
+                            <h4 class="live-class-header"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-radio h-3.5 w-3.5 animate-pulse" aria-hidden="true">
+                                    <path d="M16.247 7.761a6 6 0 0 1 0 8.478"></path>
+                                    <path d="M19.075 4.933a10 10 0 0 1 0 14.134"></path>
+                                    <path d="M4.925 19.067a10 10 0 0 1 0-14.134"></path>
+                                    <path d="M7.753 16.239a6 6 0 0 1 0-8.478"></path>
+                                    <circle cx="12" cy="12" r="2"></circle>
+                                </svg>Live Classes</h4>
+                            <p class="live-sub-container">
+                            <p style="color:rgba(38, 201, 38, 0.881);">NEXT SESSION</p>
+                            <P style="color: white;">May 31st live-web App Development</P>
+                            <p style="color: rgba(180, 169, 169, 0.84);">5/31/2026, 6:30:00PM</p>
+                            <p style="color: rgba(35, 169, 35, 0.866);">Join link</p>
+                            </p>
+                        </div>
+                        <div>
+                            <p>Previous classes</p>
+                        </div>
+                        <div class="row py-6 ml-2" style="border-radius: 30px;">
+                            <div class="col" style="display:flexalign items;"></div>
+                            <div style="padding:3rem" class="logo-container">
+                             <img src="senak360-logo.jpg" width="400px" height="400px"/>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

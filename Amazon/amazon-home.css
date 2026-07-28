@@ -1,0 +1,72 @@
+* {
+    font-family: "Rubik", sans-serif;
+}
+
+header {
+    background-color: #0f1111;
+    height: 3.6rem;
+    width: 550vw;
+    margin-top: -1rem;
+    margin-left: -0.5rem;
+}
+
+header span img {
+    height: 60px;
+    width: 100px;
+    margin-top: 0.2rem;
+}
+
+header span {
+    margin-left: 1rem;
+}
+
+.header-span-address {
+    font-size: 15px;
+
+}
+
+.flex-box-header-address span {
+    font-size: 10px;
+    margin-top: 0.4cm;
+    color: white;
+}
+
+.flex-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-box-header-address {
+    max-width: 150px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.3rem;
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+}
+
+.flex-item {
+    gap: 0px;
+    margin-bottom: -0.9rem;
+}
+
+.searchbar-container {
+    max-width: 300px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+
+}
+
+.searchbar-container select {
+width: 30px;
+margin-top: 0.5rem;
+font-size: 8px;
+height: 1rem;
+}
+.searchbar-container input{
+    margin-top: 0.8rem;
+    height:1.3rem ;
+    font-size: 8px;
+    width: 200px;
+}

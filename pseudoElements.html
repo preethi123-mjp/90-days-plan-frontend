@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+       input::placeholder{
+             color: rgb(255, 0, 195);
+             
+       }
+       p::selection{
+        background-color: red;
+       }
+       p::before{
+        content: this is a sample test;
+        display: block;
+        color: blueviolet;
+        border-color: aqua;
+       }
+       p::first-letter{
+             color: blue;
+       }
+       p::grammar-error{
+        background-color: red;
+        color:white;
+       }
+       p:hover{
+           background-color:blue;
+           color: white;
+
+       }
+       button:active{
+             background-color: green;
+             color: white;
+       }
+    </style>
+</head>
+
+<body>
+    <p>
+        The clock inside the Lighthouse of Oakhaven was not powered by gears, but by the memory of tides. Every evening,
+        an old keeper named Arthur climbed the winding stairs to polish its brass face. He had outlived his shipmates,
+        his family, and the village at the base of the cliff, which had long since vanished into the shifting
+        sands.Arthur’s only companion was a silver pocket watch that stayed silent, its hands permanently frozen at
+        twelve o'clock.One stormy night, a sound broke through the howling wind—not of waves, but of a heavy iron key
+        turning inside the lighthouse door. Arthur hurried down the steps, his lantern casting long, nervous shadows on
+        the stone walls. Standing in the doorway was a young girl, no older than ten, soaked to the bone and shivering.
+        She held nothing but a small leather-bound journal.
+    </p>
+    <button type="submit">SUBMIT</button>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My First CSS Project</title>
+    <style>
+        /* Universal selector: affects every element */
+        * {
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        /* Element selector: targets the <body> tag */
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* ID selector: designs the main card container */
+        #container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 350px;
+        }
+
+        /* Class selector: styles the main header title */
+        .title {
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        /* Child combinator: targets <li> elements inside .features */
+        ul.features>li {
+            padding: 8px 0;
+            color: #555;
+        }
+
+        /* Pseudo-class: changes button color on mouse hover */
+        .theme-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* nth-child Pseudo-class: gives odd list rows a gray background */
+        ul.features li:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        /* Focus Pseudo-class: highlights the number box when clicked */
+        input:focus {
+            border: 2px solid #007bff;
+            outline: none;
+        }
+
+        /* In-range pseudo-class */
+        input:in-range {
+            border: 2px solid green;
+        }
+
+        /* Design the toggle button styling */
+        .theme-btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+
+        /* General Sibling: Dark Mode Trigger */
+        #darkThemeUsed:checked~#container {
+            background-color: #222;
+            color: white;
+        }
+
+        #darkThemeUsed:checked~#container .title,
+        #darkThemeUsed:checked~#container ul.features li {
+            color: #fff;
+        }
+
+        #darkThemeUsed:checked~#container ul.features li:nth-child(odd) {
+            background-color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- This checkbox works as our theme controller -->
+    <input type="checkbox" id="darkThemeUsed" hidden />
+
+    <div id="container">
+        <!-- Theme Toggle Button -->
+        <label for="darkThemeUsed" class="theme-btn">Toggle Dark Mode</label>
+
+        <h2 class="title">Premium Plan</h2>
+        <p class="description">Perfect for beginners learning web design.</p>
+
+        <hr>
+
+        <!-- Feature List -->
+        <ul class="features">
+            <li>Step-by-step guidance</li>
+            <li>Hands-on practical projects</li>
+            <li>No prior coding knowledge needed</li>
+            <li>Lifetime access to resources</li>
+        </ul>
+
+        <!-- Price Range Control -->
+        <div class="pricing-section">
+            <p>Adjust Your Budget Limit:</p>
+            <input type="number" min="10" max="20" value="15">
+        </div>
+    </div>
+
+</body>
+
+</html>

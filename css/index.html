@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="italic">
+  <title>My First CSS Project</title>
+  
+  <!-- Linking the External CSS file -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- 5. Internal CSS: Styles only the main page title -->
+  <style>
+    .page-title {
+      color: #2c3e50;
+      font-size: 40px;
+      margin-bottom: 30%;
+      position: absolute;
+      top: 40px;
+    }
+    
+    /* 6. List Styling: Customizes the skills list */
+    ul {
+      list-style-type: disc;
+      padding-left: 30px;
+      margin-top: 20px;
+      text-align: left;
+    }
+    li {
+      margin: 8px 0;
+      color: #a22626;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="page-title">Learning Journey</h1>
+
+  <!-- Profile Card Container -->
+  <div class="profile-card">
+    <!-- 7. Inline CSS: Making the name text purple right inside the tag -->
+    <h2 style="color: #6c5ce7; font-size: 24px;">Alex Developer</h2>
+    
+    <p style="font-weight: bold; margin-top: 5px;">Web Design Student</p>
+    
+    <hr style="margin: 10px 0; border: 0; border-top: 4px solid #8927af;">
+    
+    <p style="text-transform: uppercase; font-size: 12px; color: #25890c;">My Skills</p>
+    
+    <!-- Unordered List element -->
+    <ul>
+      <li>HTML5 Structure</li>
+      <li>CSS Foundations</li>
+      <li>Responsive Layouts</li>
+      
+    </ul>
+    
+  </div>
+
+</body>
+</html>
